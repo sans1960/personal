@@ -27,6 +27,7 @@ class StoreCitaRequest extends FormRequest
               'motiu' => 'required|string|max:250',
             'dia' => 'required',
               'hora' => 'required',
+              'comentari'=>'required',
              
         ];
     }

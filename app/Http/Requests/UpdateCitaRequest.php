@@ -11,7 +11,7 @@ class UpdateCitaRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,13 @@ class UpdateCitaRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+               'nom' => 'required|string|max:250',
+            'lloc' => 'required|string|max:250',
+              'motiu' => 'required|string|max:250',
+            'dia' => 'required',
+              'hora' => 'required',
+              'comentari'=>'required',
+           
         ];
     }
 }

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('lloc');
             $table->string('motiu');
             $table->date('dia');
-            $table->string('comentari')->nullable();
+            $table->string('comentari');
              $table->time('hora');
             $table->timestamps();
         });

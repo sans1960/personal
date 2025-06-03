@@ -30,6 +30,7 @@
 
                         </tr>
                     </thead>
+                    <tbody>
                     @foreach ($tasks as $task )
                     <tr class="bg-white transition-all duration-500 hover:bg-gray-50">
 

@@ -6,14 +6,14 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreCitaRequest;
 use App\Http\Requests\UpdateCitaRequest;
 use App\Models\Cita;
+use Illuminate\Http\RedirectResponse;
 use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Http\Request;
 
+
 class CitaController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+ 
     public function index()
     {
          $cites = Cita::paginate(10);
@@ -22,17 +22,13 @@ class CitaController extends Controller
         return view('admin.cites.index',compact('cites'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
+
     public function create()
     {
         return view('admin.cites.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+   
     public function store(StoreCitaRequest $request)
     {
          $validated = $request->validated();
@@ -43,35 +39,41 @@ class CitaController extends Controller
             return redirect()->route('cites.index');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Cita $cita)
+   
+    public function show($id)
     {
+        $cita = Cita::findOrFail($id);
         return view('admin.cites.show',compact('cita'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Cita $cita)
+  
+    public function edit($id)
     {
+           $cita = Cita::findOrFail($id);
         return view('admin.cites.edit',compact('cita'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+    public function destroy($id)
     {
-        //
+        $cita = Cita::findOrFail($id);
+        $cita->delete();
+        Alert::success('Cita eliminada','Cita eliminada amb exit');
+            return redirect()->route('cites.index');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
+
+
+
+
+
+       public function update(UpdateCitaRequest $request, $id)
     {
-        //
+          $validated = $request->validated();
+          $cita = Cita::find($id);
+           $update = $cita->update($validated);
+            if($update){
+            Alert::success('Cita updated','Cita actualitzada amb exit');
+            return redirect()->route('cites.index');
+            }
     }
 }

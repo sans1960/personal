@@ -31,7 +31,7 @@
                         </div>
                                 <div>
                             <x-input-label for="hora" :value="__('Hora')" />
-                            <x-text-input id="hora" class="block mt-1 w-full" type="time" name="hora" :value="old('dia')" required  />
+                            <x-text-input id="hora" class="block mt-1 w-full" type="time" name="hora" :value="old('hora')" required  />
                             <x-input-error :messages="$errors->get('hora')" class="mt-2" />
                         </div>
                         </div>

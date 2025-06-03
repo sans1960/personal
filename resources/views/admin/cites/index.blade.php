@@ -31,10 +31,67 @@
 
                         </tr>
                     </thead>
+                    <tbody>
+                        @foreach ($cites as $cita)
+                         <tr class="bg-white transition-all duration-500 hover:bg-gray-50">
+
+                        <td class="p-5 whitespace-nowrap text-sm leading-6 font-medium text-gray-900 "> 
+                      {{ $cita->nom }}
+                       
+
+                        </td>
+                
+                          <td class="p-5 whitespace-nowrap text-sm leading-6 font-medium text-gray-900"> {{ Carbon\Carbon::parse($cita->dia)->format('d/m/Y') }}</td>
+                            <td class="p-5 whitespace-nowrap text-sm leading-6 font-medium text-gray-900"> {{ $cita->hora }}</td>
+                
+
+                            <td class="p-5 whitespace-nowrap text-sm leading-6 font-medium text-gray-900 "> 
+                      {{ $cita->lloc }}
+                       
+
+                        </td>
+                           
+                        <td class="p-5 whitespace-nowrap text-sm leading-6 font-medium text-gray-900">
+                            <a href="{{ route('cites.show',$cita) }}">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-green-800">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+
+                            </a>
+                        </td>
+                        <td class="p-5 whitespace-nowrap text-sm leading-6 font-medium text-gray-900">
+                            <a href="{{ route('cites.edit',$cita) }}">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-yellow-800">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
+                                </svg>
+
+                            </a>
+                        </td>
+                        <td class="p-5 whitespace-nowrap text-sm leading-6 font-medium text-gray-900">
+                            <form action="{{ route('cites.destroy',$cita)}}" method="post">
+                                @csrf
+                                @method('delete')
+                                <button type="submit" 
+                                    class="skow_confirm flex space-x-2 items-center px-2 py-2 bg-rose-500 hover:bg-rose-800 rounded-md drop-shadow-md cursor-pointer duration-300">
+                                    <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M 10 2 L 9 3 L 3 3 L 3 5 L 21 5 L 21 3 L 15 3 L 14 2 L 10 2 z M 4.3652344 7 L 5.8925781 20.263672 C 6.0245781 21.253672 6.877 22 7.875 22 L 16.123047 22 C 17.121047 22 17.974422 21.254859 18.107422 20.255859 L 19.634766 7 L 4.3652344 7 z">
+                                        </path>
+                                    </svg>
+                                    
+                                </button>
+                            </form>
+                        </td>
+
+                    </tr>
+                        @endforeach
+                    </tbody>
                  
 
 
-                    </tbody>
                 </table>
                
             </div>
