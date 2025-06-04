@@ -1,0 +1,77 @@
+ <x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            {{ __('Edit post') }}
+        </h2>
+    </x-slot>
+
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 text-gray-900 dark:text-gray-100">
+                    <form action="{{ route('posts.update',$post) }}" method="post" enctype="multipart/form-data">
+                        @method('PUT')
+                        @csrf
+                        <div>
+                            <x-input-label for="title" :value="__('Title')" />
+                            <x-text-input id="title" class="block mt-1 w-full" type="text" name="title" value="{{ $post->title }}" required  />
+                            <x-input-error :messages="$errors->get('title')" class="mt-2" />
+                        </div>
+               
+                        <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-2">
+                            <div>
+                                    <x-input-label for="image" :value="__('Image')" />
+                            <x-text-input id="image" class="block mt-1 w-full" type="file" name="image" value="{{ $post->image }}"  />
+                            <x-input-error :messages="$errors->get('image')" class="mt-2" />
+                            </div>
+                            <div>
+                                <img id="preview-image-before-upload" class="w-64"
+                  src="{{ Storage::url($post->image) }}" alt="">
+                            </div>
+
+                        </div>
+                         <div class="mt-3">
+              <label for="description" class="form-label">Description</label>
+              <textarea class="" id="description" rows="3" name="description">
+                {!! $post->description !!}
+              </textarea>
+            </div>
+                        <div class="flex items-center justify-end mt-4">
+
+
+                            <x-primary-button class="ms-4">
+                                {{ __('Update Post') }}
+                            </x-primary-button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    @section('js')
+    <script>
+  $(document).ready(function (e) {
+       $('#image').change(function(){
+        let reader = new FileReader();
+        reader.onload = (e) => {
+          $('#preview-image-before-upload').attr('src', e.target.result);
+        }
+        reader.readAsDataURL(this.files[0]);
+       });
+    });
+</script>
+<script>
+  tinymce.init({
+            selector: 'textarea',
+            advcode_inline: true,
+            plugins: 'anchor autolink charmap codesample code emoticons  link lists  searchreplace table visualblocks wordcount',
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link  table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat | code',
+            branding: false,
+            menubar: false,
+            language: 'ca',
+            advcode_inline: true,
+        });
+</script>
+    
+    @endsection
+</x-app-layout>

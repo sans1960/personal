@@ -21,6 +21,10 @@
                           <x-nav-link :href="route('cites.index')" :active="request()->routeIs('cites.*')">
                         {{ __('Cites') }}
                     </x-nav-link>
+                       
+                          <x-nav-link :href="route('posts.index')" :active="request()->routeIs('posts.*')">
+                        {{ __('Posts') }}
+                    </x-nav-link>
                 </div>
             </div>
 
