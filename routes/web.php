@@ -3,13 +3,13 @@
 use App\Http\Controllers\Admin\CitaController;
 use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\Admin\TaskController;
+use App\Http\Controllers\FrontController;
 use App\Http\Controllers\ProfileController;
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [FrontController::class,'index'])->name('index');
+Route::get('/home',[FrontController::class,'home'])->name('home');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
