@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
 class FrontController extends Controller
 {
     public function index()
@@ -16,4 +17,6 @@ class FrontController extends Controller
     {
         return view('front.home');
     }
+
+ 
 }

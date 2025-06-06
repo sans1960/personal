@@ -12,14 +12,14 @@
         <div class="hidden sm:block text-gray-500">
           <div class="ml-10 flex items-baseline">
             <a
-              href="#"
+              href="{{ route('home')}}"
               class="px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700"
               >Home</a
             >
             <a
-              href="#"
+              href=""
               class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-              >About</a
+              >Geografia</a
             >
             <a
               href="#"
@@ -89,14 +89,14 @@
         class="block sm:hidden px-5 pt-2 pb-3 sm:px-3"
       >
         <a
-          href="#"
+          href="{{ route('home')}}"
           class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700"
           >Home</a
         >
         <a
-          href="#"
+          href=""
           class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-          >About</a
+          >Geografia</a
         >
         <a
           href="#"

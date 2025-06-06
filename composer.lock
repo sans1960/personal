@@ -4,105 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "527670045d80414aefc3806abc12073b",
+    "content-hash": "acd5897f1d28267df347c919c60e94b4",
     "packages": [
         {
-            "name": "astrotomic/laravel-translatable",
-            "version": "v11.16.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Astrotomic/laravel-translatable.git",
-                "reference": "dab1fc69479bcd4f3fe8c3fa305268564d3d5101"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Astrotomic/laravel-translatable/zipball/dab1fc69479bcd4f3fe8c3fa305268564d3d5101",
-                "reference": "dab1fc69479bcd4f3fe8c3fa305268564d3d5101",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^9.0 || ^10.0 || ^11.0 || ^12.0",
-                "illuminate/database": "^9.0 || ^10.0 || ^11.0 || ^12.0",
-                "illuminate/support": "^9.0 || ^10.0 || ^11.0 || ^12.0",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "larastan/larastan": "^2.0 || ^3.0",
-                "laravel/legacy-factories": "^1.0.4",
-                "laravel/pint": "^1.0",
-                "mockery/mockery": "^1.3.3",
-                "orchestra/testbench": "^7.0 || ^8.0 || ^9.0 || ^10.0",
-                "phpunit/phpunit": "^10.0 || ^11.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Astrotomic\\Translatable\\TranslatableServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Astrotomic\\Translatable\\": "src/Translatable/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tom Witkowski",
-                    "email": "gummibeer@astrotomic.info",
-                    "homepage": "https://gummibeer.de",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Dimitrios Savvopoulos",
-                    "email": "ds@dimsav.com",
-                    "homepage": "http://dimsav.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A Laravel package for multilingual models",
-            "homepage": "https://astrotomic.info",
-            "keywords": [
-                "database",
-                "language",
-                "laravel",
-                "translation"
-            ],
-            "support": {
-                "docs": "https://docs.astrotomic.info/laravel-translatable",
-                "email": "dev@astrotomic.info",
-                "issues": "https://github.com/Astrotomic/laravel-translatable/issues",
-                "source": "https://github.com/Astrotomic/laravel-translatable"
-            },
-            "funding": [
-                {
-                    "url": "https://forest.astrotomic.info",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/Gummibeer",
-                    "type": "github"
-                }
-            ],
-            "time": "2025-03-26T09:18:35+00:00"
-        },
-        {
             "name": "brick/math",
-            "version": "0.12.3",
+            "version": "0.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
-                "reference": "866551da34e9a618e64a819ee1e01c20d8a588ba"
+                "reference": "fc7ed316430118cc7836bf45faff18d5dfc8de04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/866551da34e9a618e64a819ee1e01c20d8a588ba",
-                "reference": "866551da34e9a618e64a819ee1e01c20d8a588ba",
+                "url": "https://api.github.com/repos/brick/math/zipball/fc7ed316430118cc7836bf45faff18d5dfc8de04",
+                "reference": "fc7ed316430118cc7836bf45faff18d5dfc8de04",
                 "shasum": ""
             },
             "require": {
@@ -141,7 +56,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-                "source": "https://github.com/brick/math/tree/0.12.3"
+                "source": "https://github.com/brick/math/tree/0.13.1"
             },
             "funding": [
                 {
@@ -149,7 +64,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-28T13:11:00+00:00"
+            "time": "2025-03-29T13:50:30+00:00"
         },
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -1141,20 +1056,20 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v12.16.0",
+            "version": "v12.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "293bb1c70224faebfd3d4328e201c37115da055f"
+                "reference": "8729d084510480fdeec9b6ad198180147d4a7f06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/293bb1c70224faebfd3d4328e201c37115da055f",
-                "reference": "293bb1c70224faebfd3d4328e201c37115da055f",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/8729d084510480fdeec9b6ad198180147d4a7f06",
+                "reference": "8729d084510480fdeec9b6ad198180147d4a7f06",
                 "shasum": ""
             },
             "require": {
-                "brick/math": "^0.11|^0.12",
+                "brick/math": "^0.11|^0.12|^0.13",
                 "composer-runtime-api": "^2.2",
                 "doctrine/inflector": "^2.0.5",
                 "dragonmantank/cron-expression": "^3.4",
@@ -1352,7 +1267,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-05-27T15:49:44+00:00"
+            "time": "2025-06-03T14:04:18+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -2092,126 +2007,6 @@
             "time": "2024-12-08T08:18:47+00:00"
         },
         {
-            "name": "lwwcas/laravel-countries",
-            "version": "4.12.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lwwcas/laravel-countries.git",
-                "reference": "85b6bcaabbf4987f70459af7896c4db19bdb4fe2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lwwcas/laravel-countries/zipball/85b6bcaabbf4987f70459af7896c4db19bdb4fe2",
-                "reference": "85b6bcaabbf4987f70459af7896c4db19bdb4fe2",
-                "shasum": ""
-            },
-            "require": {
-                "astrotomic/laravel-translatable": "^11.8",
-                "laravel/framework": "^10.48|^11.31|^12.0",
-                "php": "^8.2|^8.3",
-                "spatie/laravel-package-tools": "1.92.*"
-            },
-            "require-dev": {
-                "doctrine/dbal": "^3.0",
-                "laravel/legacy-factories": "^1.4",
-                "mockery/mockery": "^1.6",
-                "nunomaduro/termwind": "^2.3.0",
-                "orchestra/testbench": "^9.12",
-                "pestphp/pest": "^3.7",
-                "pestphp/pest-plugin-laravel": "^3.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "WCountries": "Lwwcas\\LaravelCountries\\Facades\\WCountries"
-                    },
-                    "providers": [
-                        "Lwwcas\\LaravelCountries\\Providers\\WCountriesServiceProvider"
-                    ]
-                },
-                "features": {
-                    "iso-support": "Handles ISO Alpha-2, Alpha-3, and numeric country codes with ease.",
-                    "data-seeding": "Includes customizable seeders for automatic country data population.",
-                    "query-scopes": "Predefined query scopes for easy access to country data.",
-                    "artisan-commands": "Includes artisan commands for managing country and language data.",
-                    "country-relations": "Easily link country data to other models using foreign key relationships.",
-                    "geographical-data": "Provides precise latitude/longitude coordinates and SVG maps for each country.",
-                    "multilingual-support": "Fully supports translations for country names and metadata.",
-                    "laravel-compatibility": "Supports Laravel 9.x, 10.x, 11.x, ensuring smooth integration.",
-                    "dynamic-language-install": "Languages can be installed or removed dynamically at any time."
-                },
-                "compatibility": {
-                    "laravel": {
-                        "current": "10.x, 11.x, 12.x",
-                        "planned": [
-                            "13.x"
-                        ],
-                        "untested": [
-                            "13.x"
-                        ]
-                    }
-                },
-                "language-management": {
-                    "dynamic-install": true,
-                    "default-language": "en",
-                    "supported-languages": [
-                        "ar",
-                        "nl",
-                        "en",
-                        "de",
-                        "it",
-                        "pt",
-                        "ru",
-                        "es"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Lwwcas\\LaravelCountries\\": "src/",
-                    "Lwwcas\\LaravelCountries\\Config\\": "src/config/",
-                    "Lwwcas\\LaravelCountries\\Database\\migrations\\": "src/database/migrations/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Lucas Duarte O. Monteiro",
-                    "email": "lwwcas@gmail.com",
-                    "homepage": "http://www.lucasduarte.dev",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A comprehensive package for managing country data in Laravel applications, including multilingual support, geographic coordinates, and detailed metadata for seamless integration with Laravel.",
-            "homepage": "https://lwwcas.github.io/laravel-countries/",
-            "keywords": [
-                "ISO codes",
-                "coordinates",
-                "countries",
-                "country data",
-                "geography",
-                "geojson",
-                "geolocation",
-                "laravel",
-                "laravel package",
-                "lucas duarte",
-                "lwwcas",
-                "multilingual",
-                "svg maps",
-                "world countries"
-            ],
-            "support": {
-                "docs": "https://github.com/lwwcas/laravel-countries/docs",
-                "issues": "https://github.com/lwwcas/laravel-countries/issues",
-                "source": "https://github.com/lwwcas/laravel-countries"
-            },
-            "time": "2025-03-30T18:18:10+00:00"
-        },
-        {
             "name": "monolog/monolog",
             "version": "3.9.0",
             "source": {
@@ -2484,16 +2279,16 @@
         },
         {
             "name": "nette/utils",
-            "version": "v4.0.6",
+            "version": "v4.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "ce708655043c7050eb050df361c5e313cf708309"
+                "reference": "e67c4061eb40b9c113b218214e42cb5a0dda28f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/ce708655043c7050eb050df361c5e313cf708309",
-                "reference": "ce708655043c7050eb050df361c5e313cf708309",
+                "url": "https://api.github.com/repos/nette/utils/zipball/e67c4061eb40b9c113b218214e42cb5a0dda28f2",
+                "reference": "e67c4061eb40b9c113b218214e42cb5a0dda28f2",
                 "shasum": ""
             },
             "require": {
@@ -2564,22 +2359,22 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v4.0.6"
+                "source": "https://github.com/nette/utils/tree/v4.0.7"
             },
-            "time": "2025-03-30T21:06:30+00:00"
+            "time": "2025-06-03T04:55:08+00:00"
         },
         {
             "name": "nikic/php-parser",
-            "version": "v5.4.0",
+            "version": "v5.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "447a020a1f875a434d62f2a401f53b82a396e494"
+                "reference": "ae59794362fe85e051a58ad36b289443f57be7a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/447a020a1f875a434d62f2a401f53b82a396e494",
-                "reference": "447a020a1f875a434d62f2a401f53b82a396e494",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/ae59794362fe85e051a58ad36b289443f57be7a9",
+                "reference": "ae59794362fe85e051a58ad36b289443f57be7a9",
                 "shasum": ""
             },
             "require": {
@@ -2622,9 +2417,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v5.4.0"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.5.0"
             },
-            "time": "2024-12-30T11:07:19+00:00"
+            "time": "2025-05-31T08:24:38+00:00"
         },
         {
             "name": "nunomaduro/termwind",
@@ -3401,20 +3196,20 @@
         },
         {
             "name": "ramsey/uuid",
-            "version": "4.7.6",
+            "version": "4.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "91039bc1faa45ba123c4328958e620d382ec7088"
+                "reference": "fdf4dd4e2ff1813111bd0ad58d7a1ddbb5b56c28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/91039bc1faa45ba123c4328958e620d382ec7088",
-                "reference": "91039bc1faa45ba123c4328958e620d382ec7088",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/fdf4dd4e2ff1813111bd0ad58d7a1ddbb5b56c28",
+                "reference": "fdf4dd4e2ff1813111bd0ad58d7a1ddbb5b56c28",
                 "shasum": ""
             },
             "require": {
-                "brick/math": "^0.8.8 || ^0.9 || ^0.10 || ^0.11 || ^0.12",
+                "brick/math": "^0.8.8 || ^0.9 || ^0.10 || ^0.11 || ^0.12 || ^0.13",
                 "ext-json": "*",
                 "php": "^8.0",
                 "ramsey/collection": "^1.2 || ^2.0"
@@ -3423,26 +3218,23 @@
                 "rhumsaa/uuid": "self.version"
             },
             "require-dev": {
-                "captainhook/captainhook": "^5.10",
+                "captainhook/captainhook": "^5.25",
                 "captainhook/plugin-composer": "^5.3",
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-                "doctrine/annotations": "^1.8",
-                "ergebnis/composer-normalize": "^2.15",
-                "mockery/mockery": "^1.3",
+                "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+                "ergebnis/composer-normalize": "^2.47",
+                "mockery/mockery": "^1.6",
                 "paragonie/random-lib": "^2",
-                "php-mock/php-mock": "^2.2",
-                "php-mock/php-mock-mockery": "^1.3",
-                "php-parallel-lint/php-parallel-lint": "^1.1",
-                "phpbench/phpbench": "^1.0",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan": "^1.8",
-                "phpstan/phpstan-mockery": "^1.1",
-                "phpstan/phpstan-phpunit": "^1.1",
-                "phpunit/phpunit": "^8.5 || ^9",
-                "ramsey/composer-repl": "^1.4",
-                "slevomat/coding-standard": "^8.4",
-                "squizlabs/php_codesniffer": "^3.5",
-                "vimeo/psalm": "^4.9"
+                "php-mock/php-mock": "^2.6",
+                "php-mock/php-mock-mockery": "^1.5",
+                "php-parallel-lint/php-parallel-lint": "^1.4.0",
+                "phpbench/phpbench": "^1.2.14",
+                "phpstan/extension-installer": "^1.4",
+                "phpstan/phpstan": "^2.1",
+                "phpstan/phpstan-mockery": "^2.0",
+                "phpstan/phpstan-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.6",
+                "slevomat/coding-standard": "^8.18",
+                "squizlabs/php_codesniffer": "^3.13"
             },
             "suggest": {
                 "ext-bcmath": "Enables faster math with arbitrary-precision integers using BCMath.",
@@ -3477,19 +3269,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ramsey/uuid/issues",
-                "source": "https://github.com/ramsey/uuid/tree/4.7.6"
+                "source": "https://github.com/ramsey/uuid/tree/4.8.1"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/ramsey",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/ramsey/uuid",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2024-04-27T21:32:50+00:00"
+            "time": "2025-06-01T06:28:46+00:00"
         },
         {
             "name": "realrashid/sweet-alert",
@@ -3580,67 +3362,6 @@
                 }
             ],
             "time": "2025-02-25T21:11:49+00:00"
-        },
-        {
-            "name": "spatie/laravel-package-tools",
-            "version": "1.92.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/laravel-package-tools.git",
-                "reference": "d20b1969f836d210459b78683d85c9cd5c5f508c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/d20b1969f836d210459b78683d85c9cd5c5f508c",
-                "reference": "d20b1969f836d210459b78683d85c9cd5c5f508c",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^9.28|^10.0|^11.0|^12.0",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.5",
-                "orchestra/testbench": "^7.7|^8.0|^9.0|^10.0",
-                "pestphp/pest": "^1.23|^2.1|^3.1",
-                "phpunit/php-code-coverage": "^9.0|^10.0|^11.0",
-                "phpunit/phpunit": "^9.5.24|^10.5|^11.5",
-                "spatie/pest-plugin-test-time": "^1.1|^2.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\LaravelPackageTools\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Tools for creating Laravel packages",
-            "homepage": "https://github.com/spatie/laravel-package-tools",
-            "keywords": [
-                "laravel-package-tools",
-                "spatie"
-            ],
-            "support": {
-                "issues": "https://github.com/spatie/laravel-package-tools/issues",
-                "source": "https://github.com/spatie/laravel-package-tools/tree/1.92.4"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/spatie",
-                    "type": "github"
-                }
-            ],
-            "time": "2025-04-11T15:27:14+00:00"
         },
         {
             "name": "symfony/clock",
@@ -6417,16 +6138,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.18.0",
+            "version": "2.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "a7de6c3c6c3c022f5cfc337f8ede6a14460cf77e"
+                "reference": "8fcc6a862f2e7b94eb4221fd0819ddba3d30ab26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/a7de6c3c6c3c022f5cfc337f8ede6a14460cf77e",
-                "reference": "a7de6c3c6c3c022f5cfc337f8ede6a14460cf77e",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/8fcc6a862f2e7b94eb4221fd0819ddba3d30ab26",
+                "reference": "8fcc6a862f2e7b94eb4221fd0819ddba3d30ab26",
                 "shasum": ""
             },
             "require": {
@@ -6476,7 +6197,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.18.0"
+                "source": "https://github.com/filp/whoops/tree/2.18.1"
             },
             "funding": [
                 {
@@ -6484,7 +6205,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-15T12:00:00+00:00"
+            "time": "2025-06-03T18:56:14+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -6660,16 +6381,16 @@
         },
         {
             "name": "laravel/pail",
-            "version": "v1.2.2",
+            "version": "v1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/pail.git",
-                "reference": "f31f4980f52be17c4667f3eafe034e6826787db2"
+                "reference": "8cc3d575c1f0e57eeb923f366a37528c50d2385a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/pail/zipball/f31f4980f52be17c4667f3eafe034e6826787db2",
-                "reference": "f31f4980f52be17c4667f3eafe034e6826787db2",
+                "url": "https://api.github.com/repos/laravel/pail/zipball/8cc3d575c1f0e57eeb923f366a37528c50d2385a",
+                "reference": "8cc3d575c1f0e57eeb923f366a37528c50d2385a",
                 "shasum": ""
             },
             "require": {
@@ -6689,7 +6410,7 @@
                 "orchestra/testbench-core": "^8.13|^9.0|^10.0",
                 "pestphp/pest": "^2.20|^3.0",
                 "pestphp/pest-plugin-type-coverage": "^2.3|^3.0",
-                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan": "^1.12.27",
                 "symfony/var-dumper": "^6.3|^7.0"
             },
             "type": "library",
@@ -6725,6 +6446,7 @@
             "description": "Easily delve into your Laravel application's log files directly from the command line.",
             "homepage": "https://github.com/laravel/pail",
             "keywords": [
+                "dev",
                 "laravel",
                 "logs",
                 "php",
@@ -6734,7 +6456,7 @@
                 "issues": "https://github.com/laravel/pail/issues",
                 "source": "https://github.com/laravel/pail"
             },
-            "time": "2025-01-28T15:15:15+00:00"
+            "time": "2025-06-05T13:55:57+00:00"
         },
         {
             "name": "laravel/pint",

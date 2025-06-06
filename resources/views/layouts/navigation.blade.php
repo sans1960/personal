@@ -25,6 +25,9 @@
                           <x-nav-link :href="route('posts.index')" :active="request()->routeIs('posts.*')">
                         {{ __('Posts') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('sites.index')" :active="request()->routeIs('sites.*')">
+                        {{ __('Llocs') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -93,11 +96,17 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
-              <x-responsive-nav-link :href="route('tasks.index')" :active="request()->routeIs('tasks.index')">
+              <x-responsive-nav-link :href="route('tasks.index')" :active="request()->routeIs('tasks.*')">
                 {{ __('Tasks') }}
             </x-responsive-nav-link>
-                <x-responsive-nav-link :href="route('cites.index')" :active="request()->routeIs('cites.index')">
+                <x-responsive-nav-link :href="route('cites.index')" :active="request()->routeIs('cites.*')">
                 {{ __('Cites') }}
+            </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('posts.index')" :active="request()->routeIs('posts.*')">
+                {{ __('Posts') }}
+            </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('sites.index')" :active="request()->routeIs('sites.*')">
+                {{ __('Llocs') }}
             </x-responsive-nav-link>
         </div>
 
