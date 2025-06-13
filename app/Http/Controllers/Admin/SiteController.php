@@ -5,6 +5,10 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Site;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Validation\Rules\File;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class SiteController extends Controller
 {
@@ -30,7 +34,36 @@ class SiteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+           $request->validate([
+            'name' => 'required|max:200',
+            'image' => File::types(['jpg', 'png', 'webp', 'jpeg'])
+
+                ->max(2048),
+            'body'=>'required',
+            'latitud'=>'required',
+            'longitud'=>'required',
+             'zoom'=>'required',
+              'caption'=>'required',
+       
+
+        ]);
+              if ($request->hasFile('image')) {
+            // put image in the public storage
+            $filePath = Storage::disk('public')->put('images/sites', request()->file('image'));
+        }
+        $site = new Site();
+        $site->name = $request->name;
+        $site->slug = Str::slug($request->name);
+        $site->image = $filePath;
+        $site->body = $request->body;
+         $site->latitud = $request->latitud;
+          $site->longitud = $request->longitud;
+           $site->zoom = $request->zoom;
+            $site->caption = $request->caption;
+        $site->save();
+          Alert::success('Lloc creat','Lloc afegit amb exit');
+            return redirect()->route('sites.index');
+
     }
 
     /**
@@ -38,7 +71,7 @@ class SiteController extends Controller
      */
     public function show(Site $site)
     {
-        return view('admin.sites.show',compact($site));
+        return view('admin.sites.show',compact('site'));
     }
 
     /**
@@ -46,7 +79,7 @@ class SiteController extends Controller
      */
     public function edit(Site $site)
     {
-        return view('admin.sites.edit',compact($site));
+        return view('admin.sites.edit',compact('site'));
     }
 
     /**
@@ -54,7 +87,40 @@ class SiteController extends Controller
      */
     public function update(Request $request, Site $site)
     {
-        //
+             $request->validate([
+            'name' => 'required|max:200',
+            'image' => File::types(['jpg', 'png', 'webp', 'jpeg'])
+
+                ->max(2048),
+            'body'=>'required',
+            'latitud'=>'required',
+            'longitud'=>'required',
+             'zoom'=>'required',
+              'caption'=>'required',
+       
+
+        ]);
+            if ($request->hasFile('image')) {
+            // delete image
+            Storage::disk('public')->delete($site->image);
+
+            $filePath = Storage::disk('public')->put('images/sites', request()->file('image'), 'public');
+            $site->image = $filePath;
+          
+        }
+          
+        $site->name = $request->name;
+        $site->slug = Str::slug($request->name);
+     
+        $site->body = $request->body;
+         $site->latitud = $request->latitud;
+          $site->longitud = $request->longitud;
+           $site->zoom = $request->zoom;
+            $site->caption = $request->caption;
+        $site->update();
+          Alert::success('Lloc actualitzat','Lloc actualitzat amb exit');
+            return redirect()->route('sites.index');
+
     }
 
     /**
@@ -62,6 +128,9 @@ class SiteController extends Controller
      */
     public function destroy(Site $site)
     {
-        //
+          Storage::disk('public')->delete($site->image);
+        $site->delete();
+         Alert::success('Site eliminat','Site eliminat amb exit');
+            return redirect()->route('sites.index');
     }
 }

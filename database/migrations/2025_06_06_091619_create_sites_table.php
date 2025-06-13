@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('slug');
             $table->string('latitud');
             $table->string('longitud');
-            $table->string('zoom');
+            $table->integer('zoom');
             $table->string('image');
             $table->string('caption');
             $table->text('body');
