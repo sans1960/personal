@@ -47,8 +47,8 @@
                         <x-dropdown-link href="{{route('categories.index')}}">
                             {{ __('Categories') }}
                         </x-dropdown-link>
-                           <x-dropdown-link href="">
-                            {{ __('Categories') }}
+                           <x-dropdown-link href="{{route('suppliers.index')}}">
+                            {{ __('Suppliers') }}
                         </x-dropdown-link>
                            <x-dropdown-link href="">
                             {{ __('Categories') }}
@@ -158,8 +158,8 @@
                         <x-dropdown-link href="{{route('categories.index')}}">
                             {{ __('Categories') }}
                         </x-dropdown-link>
-                           <x-dropdown-link href="">
-                            {{ __('Categories') }}
+                           <x-dropdown-link href="{{route('suppliers.index')}}">
+                            {{ __('Suppliers') }}
                         </x-dropdown-link>
                            <x-dropdown-link href="">
                             {{ __('Categories') }}

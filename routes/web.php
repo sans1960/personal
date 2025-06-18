@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\CitaController;
 use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\Admin\SiteController;
+use App\Http\Controllers\Admin\SupplierController;
 use App\Http\Controllers\Admin\TaskController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\ProfileController;
@@ -25,6 +26,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('posts',PostController::class)->names('posts');
     Route::resource('sites',SiteController::class)->names('sites');
     Route::resource('/categories',CategoryController::class)->names('categories');
+    Route::resource('/suppliers',SupplierController::class)->names('suppliers');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
